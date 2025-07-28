@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	
 	sprite_2d.position = Vector2(counter, counter)
 	
-	tags = "[font_color=black]"
+	tags = "[color=#008000]"
 	
 	actual_text = str(counter)
 	$RichTextLabel.text = tags + actual_text
