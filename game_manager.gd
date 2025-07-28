@@ -6,7 +6,7 @@ var is_held: bool = false
 @onready var sprite_2d: Sprite2D = $Sprite2D
 @onready var label: Label = $Sprite2D/Label
 
-var tags: String = "[font_size=52]"
+var tags: String = ""
 var actual_text: String = ""
 
 func _ready() -> void:
@@ -23,7 +23,7 @@ func _process(delta: float) -> void:
 	
 	sprite_2d.position = Vector2(counter, counter)
 	
-	tags = "[color=#008000]"
+	tags = "[color=#008000][font_size=" + str(counter/5) + "]"
 	
 	actual_text = str(counter)
 	$RichTextLabel.text = tags + actual_text
