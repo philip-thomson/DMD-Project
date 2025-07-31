@@ -1,3 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1753661367
-icon.svg::CompressedTexture2D::8216804809708689685::1753661256::1753661374::1::::<><><>0<>0<>731ac07c4c22ba8ecfe4149facefa735<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://::1753998382
+game_manager.gd::GDScript::3137810760990536427::1753998340::0::1::::<>Node2D<><>0<>0<><>::
+game_manager.tscn::PackedScene::1833621822336109972::1753998363::0::1::::<><><>0<>0<><>::uid://bkx8jxhr8c5ox::::res://game_manager.gd
+icon.svg::CompressedTexture2D/CompressedTexture2D::8216804809708689685::1753661256::1753661374::1::::<><><>0<>0<>731ac07c4c22ba8ecfe4149facefa735<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+::res://sound files/::1753998388
+button-test.wav::AudioStreamWAV::8038625196941867048::1753998388::1753998389::1::::<><><>0<>0<>4447ca49be9fdb57afe7d2d9bb91c234<>res://.godot/imported/button-test.wav-eadf80eb269ac92b6a77117ec6b727f6.sample::
+::res://text files/::1753996420
+dialogue.txt::TextFile::-1::1753996271::0::1::::<><><>0<>0<><>::
+example.txt::TextFile::-1::1753995469::0::1::::<><><>0<>0<><>::
+option.txt::TextFile::-1::1753996271::0::1::::<><><>0<>0<><>::

@@ -11,6 +11,8 @@ var actual_botton_text: String = ""
 @onready var dialogue: RichTextLabel = $dialogue
 @onready var botton_text: RichTextLabel = $botton1
 
+#giving the audio files variables
+@onready var button_press = preload("res://sound files/button-test.wav")
 
 # the raw text within the file as it is displayed in the .txt
 var raw_dialogue_file: FileAccess
