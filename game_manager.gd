@@ -47,7 +47,7 @@ func _process(delta: float) -> void:
 	# changing the style of the font
 	tags = "[color=#000000][font_size=10]"
 	# displaying the text as spesific line
-	actual_text = TextFileArrey[2]
+	actual_text = TextFileArrey[0]
 	# combining the elements and the text together
 	dialogue.text = tags + actual_text
 	# setting its size

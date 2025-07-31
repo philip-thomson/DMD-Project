@@ -6,9 +6,9 @@
 script = ExtResource("1_smx3j")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-offset_left = 481.0
-offset_top = 68.0
-offset_right = 730.0
-offset_bottom = 212.0
+offset_left = 495.0
+offset_top = 142.0
+offset_right = 744.0
+offset_bottom = 286.0
 bbcode_enabled = true
-text = "[font_size=10][font_color=#000000]ougwefiugiuqgwefougougwefiugiuqgwefougougwefiugiuqgwefoug"
+text = "[font_size=10][font_color=#000000]"
