@@ -37,7 +37,7 @@ func file_to_array(raw_file: FileAccess) -> Array[String]:
 # function that occurs the moment an element appears
 func _ready() -> void:
 	# giving raw text file access to the .txt and making it read it
-	raw_text_file = FileAccess.open("res://text files/example.txt", FileAccess.READ)
+	raw_text_file = FileAccess.open("res://text files/dialogue.txt", FileAccess.READ)
 	
 	# run the file_to_array on the raw_text_file
 	TextFileArrey = file_to_array(raw_text_file)
