@@ -5,11 +5,19 @@ var tags_bottons: String = ""
 
 # what the text is
 var actual_dialogue: String = ""
-var actual_botton_text: String = ""
+var actualText1: String = ""
+var actualText2: String = ""
+var actualText3: String = ""
+var actualText4: String = ""
 
-# giving the RichTextlabel a meaning so its easier to read and use
+# giving the RichTextlabel a meaning so its easier to read and useforce merge git not working
 @onready var dialogue: RichTextLabel = $dialogue
-@onready var botton_text: RichTextLabel = $botton1
+@onready var botton_1: RichTextLabel = $botton1
+@onready var botton_2: RichTextLabel = $botton2
+@onready var botton_3: RichTextLabel = $botton3
+@onready var botton_4: RichTextLabel = $botton4
+
+
 
 #giving the audio files variables
 @onready var button_press = preload("res://sound files/button-test.wav")
@@ -56,12 +64,24 @@ func _process(delta: float) -> void:
 	# changing the style of the font
 	tags_dialogue = "[color=#000000][font_size=10]"
 	tags_bottons = "[color=#ffffff][font_size=15]"
+	
 	# displaying the text as spesific line
 	actual_dialogue = TextDialogueArray[0]
-	actual_botton_text = textBottonArray[0]
+	actualText1 = textBottonArray[0]
+	actualText2 = textBottonArray[1]
+	actualText3 = textBottonArray[2]
+	actualText4 = textBottonArray[3]
+	
 	# combining the elements and the text together
 	dialogue.text = tags_dialogue + actual_dialogue
-	botton_text.text = tags_bottons + actual_botton_text
+	botton_1.text = tags_bottons + actualText1
+	botton_2.text = tags_bottons + actualText2
+	botton_3.text = tags_bottons + actualText3
+	botton_4.text = tags_bottons + actualText4
+	
 	# setting its size
 	dialogue.size = Vector2(500, 500)
-	botton_text.size = Vector2(250, 250)
+	botton_1.size = Vector2(250, 250)
+	botton_2.size = Vector2(250, 250)
+	botton_3.size = Vector2(250, 250)
+	botton_4.size = Vector2(250, 250)
