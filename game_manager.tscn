@@ -9,8 +9,8 @@ script = ExtResource("1_smx3j")
 [node name="dialogue" type="RichTextLabel" parent="."]
 offset_left = 450.0
 offset_top = 140.0
-offset_right = 699.0
-offset_bottom = 284.0
+offset_right = 700.0
+offset_bottom = 290.0
 bbcode_enabled = true
 
 [node name="botton1" type="RichTextLabel" parent="."]
@@ -50,3 +50,39 @@ texture = ExtResource("2_smx3j")
 position = Vector2(250, 350)
 scale = Vector2(1, 2.23438)
 texture = ExtResource("2_smx3j")
+
+[node name="Button1" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 300.0
+offset_right = 458.0
+offset_bottom = 308.0
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 350.0
+offset_right = 458.0
+offset_bottom = 358.0
+
+[node name="Button3" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 400.0
+offset_right = 458.0
+offset_bottom = 408.0
+
+[node name="Button4" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 458.0
+offset_bottom = 458.0
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_pressed"]

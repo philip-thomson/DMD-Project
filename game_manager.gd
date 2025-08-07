@@ -16,6 +16,10 @@ var actualText4: String = ""
 @onready var botton_2: RichTextLabel = $botton2
 @onready var botton_3: RichTextLabel = $botton3
 @onready var botton_4: RichTextLabel = $botton4
+@onready var botton1Interaction: Button = $botton1
+@onready var botton2Interaction: Button = $botton2
+@onready var botton3Interaction: Button = $botton3
+@onready var botton4Interaction: Button = $botton4
 
 
 
@@ -58,6 +62,25 @@ func _ready() -> void:
 	# run the file_to_array on the raw_text_file
 	TextDialogueArray = file_to_array(raw_dialogue_file)
 	textBottonArray = file_to_array(raw_botton_file)
+	actual_dialogue = TextDialogueArray[0]
+	actualText1 = textBottonArray[0]
+	actualText2 = textBottonArray[1]
+	actualText3 = textBottonArray[2]
+	actualText4 = textBottonArray[3]
+
+
+
+func _on_button_1_pressed() -> void:
+	actual_dialogue = TextDialogueArray[1]
+
+func _on_button_2_pressed() -> void:
+	actual_dialogue = TextDialogueArray[2]
+
+func _on_button_3_pressed() -> void:
+	actual_dialogue = TextDialogueArray[3]
+
+func _on_button_4_pressed() -> void:
+	actual_dialogue = TextDialogueArray[4]
 
 # function that works on every frame that is being shown
 func _process(delta: float) -> void:
@@ -66,11 +89,6 @@ func _process(delta: float) -> void:
 	tags_bottons = "[color=#ffffff][font_size=15]"
 	
 	# displaying the text as spesific line
-	actual_dialogue = TextDialogueArray[0]
-	actualText1 = textBottonArray[0]
-	actualText2 = textBottonArray[1]
-	actualText3 = textBottonArray[2]
-	actualText4 = textBottonArray[3]
 	
 	# combining the elements and the text together
 	dialogue.text = tags_dialogue + actual_dialogue
@@ -85,3 +103,4 @@ func _process(delta: float) -> void:
 	botton_2.size = Vector2(250, 250)
 	botton_3.size = Vector2(250, 250)
 	botton_4.size = Vector2(250, 250)
+	
