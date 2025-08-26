@@ -1,0 +1,56 @@
+[gd_scene load_steps=3 format=3 uid="uid://1ehqo7hamtls"]
+
+[ext_resource type="Script" uid="uid://bkx8jxhr8c5ox" path="res://Stage2.gd" id="1_oiayb"]
+[ext_resource type="Texture2D" uid="uid://dpcjtsnavwb7r" path="res://icon.svg" id="2_4bw56"]
+
+[node name="Stage2" type="Node2D"]
+script = ExtResource("1_oiayb")
+
+[node name="dialogue" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 140.0
+offset_right = 700.0
+offset_bottom = 290.0
+bbcode_enabled = true
+
+[node name="botton1" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 300.0
+offset_right = 490.0
+offset_bottom = 340.0
+bbcode_enabled = true
+
+[node name="botton2" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 350.0
+offset_right = 490.0
+offset_bottom = 390.0
+bbcode_enabled = true
+
+[node name="npc" type="Sprite2D" parent="."]
+position = Vector2(900, 350)
+scale = Vector2(1, 2.23438)
+texture = ExtResource("2_4bw56")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(250, 350)
+scale = Vector2(1, 2.23438)
+texture = ExtResource("2_4bw56")
+
+[node name="Button1Interaction" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 300.0
+offset_right = 458.0
+offset_bottom = 308.0
+
+[node name="Button2Interaction" type="Button" parent="."]
+offset_left = 450.0
+offset_top = 350.0
+offset_right = 458.0
+offset_bottom = 358.0
+
+[connection signal="pressed" from="Button1Interaction" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button1Interaction" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_1_pressed"]
