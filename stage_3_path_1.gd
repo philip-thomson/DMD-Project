@@ -14,8 +14,8 @@ var actualText4: String = ""
 @onready var dialogue: RichTextLabel = $dialogue
 @onready var botton_1: RichTextLabel = $botton1
 @onready var botton_2: RichTextLabel = $botton2
-@onready var botton1Interaction: Button = $botton1Interaction
-@onready var botton2Interaction: Button = $botton2Interaction
+@onready var botton131Interaction: Button = $botton131Interaction
+@onready var botton231nteraction: Button = $botton231Interaction
 
 
 
@@ -64,11 +64,6 @@ func _ready() -> void:
 
 
 
-func _on_button_1_pressed() -> void:
-	actual_dialogue = TextDialogueArray[1]
-
-func _on_button_2_pressed() -> void:
-	actual_dialogue = TextDialogueArray[2]
 
 # function that works on every frame that is being shown
 func _process(delta: float) -> void:
@@ -87,4 +82,13 @@ func _process(delta: float) -> void:
 	dialogue.size = Vector2(500, 500)
 	botton_1.size = Vector2(250, 250)
 	botton_2.size = Vector2(250, 250)
-	
+
+
+
+func _on_button_131_interaction_pressed() -> void:
+	pass # Replace with function body.
+
+
+
+func _on_button_231_interaction_pressed() -> void:
+	pass # Replace with function body.

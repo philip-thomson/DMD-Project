@@ -37,20 +37,24 @@ position = Vector2(250, 350)
 scale = Vector2(1, 2.23438)
 texture = ExtResource("2_4bw56")
 
-[node name="Button1Interaction" type="Button" parent="."]
+[node name="Button12Interaction" type="Button" parent="."]
 offset_left = 450.0
 offset_top = 300.0
 offset_right = 458.0
 offset_bottom = 308.0
 
-[node name="Button2Interaction" type="Button" parent="."]
+[node name="Button22Interaction" type="Button" parent="."]
 offset_left = 450.0
 offset_top = 350.0
 offset_right = 458.0
 offset_bottom = 358.0
 
-[connection signal="pressed" from="Button1Interaction" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button1Interaction" to="." method="_on_button_1_pressed"]
-[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button2Interaction" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_131_nteraction_pressed"]
+[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_12_interaction_pressed"]
+[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_1_pressed"]
+[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_22_nteraction_pressed"]
+[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_22_interaction_pressed"]

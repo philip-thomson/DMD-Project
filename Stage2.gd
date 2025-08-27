@@ -7,13 +7,15 @@ var tags_bottons: String = ""
 var actual_dialogue: String = ""
 var actualText1: String = ""
 var actualText2: String = ""
+var IndexDialoguePath1 = 0
+var indexDialoguePath2 = 4
 
 # giving the RichTextlabel a meaning so its easier to read and useforce merge git not working
 @onready var dialogue: RichTextLabel = $dialogue
 @onready var botton_1: RichTextLabel = $botton1
 @onready var botton_2: RichTextLabel = $botton2
-@onready var botton1Interaction: Button = $botton1Interaction
-@onready var botton2Interaction: Button = $botton2Interaction
+@onready var botton12Interaction: Button = $botton12Interaction
+@onready var botton22Interaction: Button = $botton22Interaction
 
 
 
@@ -51,8 +53,8 @@ func file_to_array(raw_file: FileAccess) -> Array[String]:
 # function that occurs the moment an element appears
 func _ready() -> void:
 	# giving raw text file access to the .txt and making it read it
-	raw_dialogue_file = FileAccess.open("res://text files/dialogue.txt", FileAccess.READ)
-	raw_botton_file = FileAccess.open("res://text files/option.txt", FileAccess.READ)
+	raw_dialogue_file = FileAccess.open("res://text for stage 2/stage2.txt", FileAccess.READ)
+	raw_botton_file = FileAccess.open("res://text for stage 2/optionStage2.txt", FileAccess.READ)
 	# run the file_to_array on the raw_text_file
 	TextDialogueArray = file_to_array(raw_dialogue_file)
 	textBottonArray = file_to_array(raw_botton_file)
@@ -62,11 +64,7 @@ func _ready() -> void:
 
 
 
-func _on_button_1_pressed() -> void:
-	actual_dialogue = TextDialogueArray[1]
 
-func _on_button_2_pressed() -> void:
-	actual_dialogue = TextDialogueArray[2]
 
 # function that works on every frame that is being shown
 func _process(delta: float) -> void:
@@ -86,3 +84,14 @@ func _process(delta: float) -> void:
 	botton_1.size = Vector2(250, 250)
 	botton_2.size = Vector2(250, 250)
 	
+
+
+func _on_button_12_interaction_pressed() -> void:
+	if IndexDialoguePath1 != 4:
+		IndexDialoguePath1 = IndexDialoguePath1 + 1
+		actual_dialogue = TextDialogueArray[IndexDialoguePath1]
+
+func _on_button_22_interaction_pressed() -> void:
+	if indexDialoguePath2 != 8:
+		indexDialoguePath2 = indexDialoguePath2 + 1
+		actual_dialogue = TextDialogueArray[indexDialoguePath2]

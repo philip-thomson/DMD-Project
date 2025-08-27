@@ -37,14 +37,19 @@ position = Vector2(250, 350)
 scale = Vector2(1, 2.23438)
 texture = ExtResource("2_b3k2d")
 
-[node name="Button1Interaction" type="Button" parent="."]
+[node name="Button131Interaction" type="Button" parent="."]
 offset_left = 450.0
 offset_top = 300.0
 offset_right = 458.0
 offset_bottom = 308.0
 
-[node name="Button2Interaction" type="Button" parent="."]
+[node name="Button231Interaction" type="Button" parent="."]
 offset_left = 450.0
 offset_top = 350.0
 offset_right = 458.0
 offset_bottom = 358.0
+
+[connection signal="pressed" from="Button131Interaction" to="." method="_on_button_1_interaction_pressed"]
+[connection signal="pressed" from="Button131Interaction" to="." method="_on_button_131_interaction_pressed"]
+[connection signal="pressed" from="Button231Interaction" to="." method="_on_button_231_interaction_pressed"]
+[connection signal="pressed" from="Button231Interaction" to="." method="_on_button_2_interaction_pressed"]
