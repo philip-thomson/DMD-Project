@@ -7,15 +7,15 @@ var tags_bottons: String = ""
 var actual_dialogue: String = ""
 var actualText1: String = ""
 var actualText2: String = ""
-var IndexDialoguePath1 = 0
+var indexDialoguePath1 = 0
 var indexDialoguePath2 = 4
 
 # giving the RichTextlabel a meaning so its easier to read and useforce merge git not working
 @onready var dialogue: RichTextLabel = $dialogue
 @onready var botton_1: RichTextLabel = $botton1
 @onready var botton_2: RichTextLabel = $botton2
-@onready var botton12Interaction: Button = $botton12Interaction
-@onready var botton22Interaction: Button = $botton22Interaction
+@onready var botton12Interaction: Button = $Buttontest1
+@onready var botton22Interaction: Button = $Buttontest2
 
 
 
@@ -53,8 +53,8 @@ func file_to_array(raw_file: FileAccess) -> Array[String]:
 # function that occurs the moment an element appears
 func _ready() -> void:
 	# giving raw text file access to the .txt and making it read it
-	raw_dialogue_file = FileAccess.open("res://text for stage 2/stage2.txt", FileAccess.READ)
-	raw_botton_file = FileAccess.open("res://text for stage 2/optionStage2.txt", FileAccess.READ)
+	raw_dialogue_file = FileAccess.open("res://stage 2 scene/text for stage 2/stage2.txt", FileAccess.READ)
+	raw_botton_file = FileAccess.open("res://stage 2 scene/text for stage 2/optionStage2.txt", FileAccess.READ)
 	# run the file_to_array on the raw_text_file
 	TextDialogueArray = file_to_array(raw_dialogue_file)
 	textBottonArray = file_to_array(raw_botton_file)
@@ -84,13 +84,3 @@ func _process(delta: float) -> void:
 	botton_1.size = Vector2(250, 250)
 	botton_2.size = Vector2(250, 250)
 	
-
-
-
-func _on_button_131_interaction_pressed() -> void:
-	pass # Replace with function body.
-
-
-
-func _on_button_231_interaction_pressed() -> void:
-	pass # Replace with function body.

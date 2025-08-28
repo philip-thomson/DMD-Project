@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://bs4ao1prbv1xt"]
+
+[ext_resource type="Script" uid="uid://coyqxlw6c1065" path="res://test.gd" id="1_37kl0"]
+[ext_resource type="Texture2D" uid="uid://dpcjtsnavwb7r" path="res://icon.svg" id="2_8uh7m"]
+[ext_resource type="Script" uid="uid://p10fw43jamvo" path="res://buttontest_1.gd" id="3_ppyta"]
+[ext_resource type="Script" uid="uid://ek1wc287w6fv" path="res://buttontest_2.gd" id="4_ykrsh"]
+
+[node name="testing" type="Node2D"]
+script = ExtResource("1_37kl0")
+
+[node name="dialogue" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 140.0
+offset_right = 700.0
+offset_bottom = 290.0
+bbcode_enabled = true
+
+[node name="botton1" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 300.0
+offset_right = 490.0
+offset_bottom = 340.0
+bbcode_enabled = true
+
+[node name="botton2" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 350.0
+offset_right = 490.0
+offset_bottom = 390.0
+bbcode_enabled = true
+
+[node name="npc" type="Sprite2D" parent="."]
+position = Vector2(900, 350)
+scale = Vector2(1, 2.23438)
+texture = ExtResource("2_8uh7m")
+
+[node name="player" type="Sprite2D" parent="."]
+position = Vector2(250, 350)
+scale = Vector2(1, 2.23438)
+texture = ExtResource("2_8uh7m")
+
+[node name="Buttontest1" type="Button" parent="."]
+offset_left = 382.0
+offset_top = 354.0
+offset_right = 656.0
+offset_bottom = 419.0
+script = ExtResource("3_ppyta")
+
+[node name="Buttontest2" type="Button" parent="."]
+offset_left = 379.0
+offset_top = 437.0
+offset_right = 658.0
+offset_bottom = 485.0
+script = ExtResource("4_ykrsh")
+
+[connection signal="pressed" from="Buttontest1" to="Buttontest1" method="_on_pressed"]
+[connection signal="pressed" from="Buttontest2" to="Buttontest2" method="_on_pressed"]
