@@ -85,12 +85,13 @@ func _process(delta: float) -> void:
 	botton_2.size = Vector2(250, 250)
 	
 
-
+#button for path 1.
 func _on_button_12_interaction_pressed() -> void:
 	if IndexDialoguePath1 != 4:
 		IndexDialoguePath1 = IndexDialoguePath1 + 1
 		actual_dialogue = TextDialogueArray[IndexDialoguePath1]
 
+#button for path 2
 func _on_button_22_interaction_pressed() -> void:
 	if indexDialoguePath2 != 8:
 		indexDialoguePath2 = indexDialoguePath2 + 1

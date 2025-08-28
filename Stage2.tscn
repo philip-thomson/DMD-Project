@@ -49,12 +49,5 @@ offset_top = 350.0
 offset_right = 458.0
 offset_bottom = 358.0
 
-[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_1_pressed"]
-[connection signal="pressed" from="Button12Interaction" to="." method="_on_button_131_nteraction_pressed"]
 [connection signal="pressed" from="Button12Interaction" to="." method="_on_button_12_interaction_pressed"]
-[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_1_pressed"]
-[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button22Interaction" to="." method="_on_button_22_nteraction_pressed"]
 [connection signal="pressed" from="Button22Interaction" to="." method="_on_button_22_interaction_pressed"]
