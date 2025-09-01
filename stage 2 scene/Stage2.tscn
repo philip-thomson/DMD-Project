@@ -1,57 +1,23 @@
-[gd_scene load_steps=5 format=3 uid="uid://1ehqo7hamtls"]
+[gd_scene load_steps=3 format=3 uid="uid://1ehqo7hamtls"]
 
-[ext_resource type="Script" uid="uid://bkx8jxhr8c5ox" path="res://stage 2 scene/Stage2.gd" id="1_oiayb"]
-[ext_resource type="Texture2D" uid="uid://dpcjtsnavwb7r" path="res://icon.svg" id="2_4bw56"]
-[ext_resource type="Script" uid="uid://b6wj8r2xqqgpk" path="res://stage 2 scene/button_12_interaction.gd" id="3_mm1r7"]
-[ext_resource type="Script" uid="uid://ixq7kq2dk3em" path="res://stage 2 scene/button_22_interaction.gd" id="4_0kcgr"]
+[ext_resource type="PackedScene" uid="uid://bs4ao1prbv1xt" path="res://GuiDisplay.tscn" id="2_sfdtj"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tqnae"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
 
 [node name="Stage2" type="Node2D"]
-script = ExtResource("1_oiayb")
 
-[node name="dialogue" type="RichTextLabel" parent="."]
-offset_left = 450.0
-offset_top = 140.0
-offset_right = 700.0
-offset_bottom = 290.0
-bbcode_enabled = true
-
-[node name="botton1" type="RichTextLabel" parent="."]
-offset_left = 450.0
-offset_top = 300.0
-offset_right = 490.0
-offset_bottom = 340.0
-bbcode_enabled = true
-
-[node name="botton2" type="RichTextLabel" parent="."]
-offset_left = 450.0
-offset_top = 350.0
-offset_right = 490.0
-offset_bottom = 390.0
-bbcode_enabled = true
+[node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
+position = Vector2(611, 34)
+dialoge_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/stage2.txt"
+button_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/optionStage2.txt"
 
 [node name="npc" type="Sprite2D" parent="."]
 position = Vector2(900, 350)
 scale = Vector2(1, 2.23438)
-texture = ExtResource("2_4bw56")
+texture = SubResource("CompressedTexture2D_tqnae")
 
 [node name="player" type="Sprite2D" parent="."]
 position = Vector2(250, 350)
 scale = Vector2(1, 2.23438)
-texture = ExtResource("2_4bw56")
-
-[node name="Button12Interaction" type="Button" parent="."]
-offset_left = 450.0
-offset_top = 300.0
-offset_right = 612.0
-offset_bottom = 324.0
-script = ExtResource("3_mm1r7")
-
-[node name="Button22Interaction" type="Button" parent="."]
-offset_left = 450.0
-offset_top = 345.0
-offset_right = 612.0
-offset_bottom = 368.0
-script = ExtResource("4_0kcgr")
-
-[connection signal="pressed" from="Button12Interaction" to="Button12Interaction" method="_on_pressed"]
-[connection signal="pressed" from="Button22Interaction" to="Button22Interaction" method="_on_pressed"]
+texture = SubResource("CompressedTexture2D_tqnae")

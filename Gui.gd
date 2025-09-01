@@ -14,9 +14,11 @@ var indexDialoguePath2 = 4
 @onready var dialogue: RichTextLabel = $dialogue
 @onready var botton_1: RichTextLabel = $botton1
 @onready var botton_2: RichTextLabel = $botton2
-@onready var botton12Interaction: Button = $Button12Interaction
-@onready var botton22Interaction: Button = $Button22Interaction
+@onready var botton12Interaction: Button = $Buttontest1
+@onready var botton22Interaction: Button = $Buttontest2
 
+@export var dialoge_path: String
+@export var button_path: String
 
 
 #giving the audio files variables
@@ -53,8 +55,8 @@ func file_to_array(raw_file: FileAccess) -> Array[String]:
 # function that occurs the moment an element appears
 func _ready() -> void:
 	# giving raw text file access to the .txt and making it read it
-	raw_dialogue_file = FileAccess.open("res://stage 2 scene/text for stage 2/stage2.txt", FileAccess.READ)
-	raw_botton_file = FileAccess.open("res://stage 2 scene/text for stage 2/optionStage2.txt", FileAccess.READ)
+	raw_dialogue_file = FileAccess.open(dialoge_path, FileAccess.READ)
+	raw_botton_file = FileAccess.open(button_path, FileAccess.READ)
 	# run the file_to_array on the raw_text_file
 	TextDialogueArray = file_to_array(raw_dialogue_file)
 	textBottonArray = file_to_array(raw_botton_file)
@@ -81,7 +83,6 @@ func _process(delta: float) -> void:
 	
 	# setting its size
 	dialogue.size = Vector2(500, 500)
-	dialogue.position = Vector2(526, 101)
 	botton_1.size = Vector2(250, 250)
 	botton_2.size = Vector2(250, 250)
 	
