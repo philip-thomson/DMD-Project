@@ -62,17 +62,23 @@ func _ready() -> void:
 	textBottonArray = file_to_array(raw_botton_file)
 	actual_dialogue = TextDialogueArray[0]
 	actualText1 = textBottonArray[0]
-	actualText2 = textBottonArray[1]
-
-
-
-
+	actualText2 = textBottonArray[2]
 
 # function that works on every frame that is being shown
 func _process(delta: float) -> void:
 	# changing the style of the font
 	tags_dialogue = "[color=#000000][font_size=10]"
-	tags_bottons = "[color=#ffffff][font_size=15]"
+	tags_bottons = "[color=#C4D6B0][font_size=15]"
+	
+	if indexDialoguePath1 != 1:
+		botton22Interaction.visible = false
+		botton22Interaction.disabled = true
+		botton_2.visible = false
+	else:
+		actualText1 = textBottonArray[1]
+		botton22Interaction.visible = true
+		botton22Interaction.disabled = false
+		botton_2.visible = true
 	
 	# displaying the text as spesific line
 	
@@ -82,7 +88,7 @@ func _process(delta: float) -> void:
 	botton_2.text = tags_bottons + actualText2
 	
 	# setting its size
-	dialogue.size = Vector2(500, 500)
-	botton_1.size = Vector2(250, 250)
-	botton_2.size = Vector2(250, 250)
+	dialogue.size = Vector2(200, 300)
+	botton_1.size = Vector2(150, 35)
+	botton_2.size = Vector2(150, 35)
 	
