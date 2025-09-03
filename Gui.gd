@@ -84,19 +84,6 @@ func _process(delta: float) -> void:
 	# changing the style of the font
 	tags_dialogue = "[color=#000000][font_size=10]"
 	tags_bottons = "[color=#C4D6B0][font_size=15]"
-	if indexDialoguePath1 != 1:
-		botton22Interaction.visible = false
-		botton_2.visible = false
-	if indexDialoguePath1 == 1:
-		actualText1 = textBottonArray[1]
-		botton22Interaction.visible = true
-		botton_2.visible = true
-	if indexDialoguePath1 == 5:
-		botton22Interaction.visible = true
-		botton_2.visible = true
-	if indexDialoguePath2 == 14:
-		botton12Interaction.visible = true
-		botton_1.visible = true
 	
 	# combining the elements and the text together
 	dialogue.text = tags_dialogue + actual_dialogue
