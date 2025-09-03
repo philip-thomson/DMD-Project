@@ -9,6 +9,17 @@ load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.cte
 
 [node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
 position = Vector2(633, 97)
+indexDialoguePath1End = 5
+indexDialoguePath2 = 11
+indexDialoguePath2End = 14
+indexFiller1Path1 = 5
+indexFiller1Path1End = 7
+indexFiller2Path1 = 7
+indexFiller2Path1End = 12
+indexFiller1Path2 = 14
+indexFiller1Path2End = 17
+indexFiller2Path2 = 17
+indexFiller2Path2End = 22
 dialoge_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/stage2.txt"
 button_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/optionStage2.txt"
 

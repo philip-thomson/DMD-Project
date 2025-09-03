@@ -7,8 +7,23 @@ var tags_bottons: String = ""
 var actual_dialogue: String = ""
 var actualText1: String = ""
 var actualText2: String = ""
-var indexDialoguePath1 = 0
-var indexDialoguePath2 = 4
+@export var indexDialoguePath1: int
+@export var indexDialoguePath1End: int
+@export var indexDialoguePath2: int
+@export var indexDialoguePath2End: int
+
+
+@export var indexFiller1Path1: int
+@export var indexFiller1Path1End: int
+
+@export var indexFiller2Path1: int
+@export var indexFiller2Path1End: int
+
+@export var indexFiller1Path2: int
+@export var indexFiller1Path2End: int
+@export var indexFiller2Path2: int
+@export var indexFiller2Path2End: int
+
 
 # giving the RichTextlabel a meaning so its easier to read and useforce merge git not working
 @onready var dialogue: RichTextLabel = $dialogue
@@ -69,18 +84,19 @@ func _process(delta: float) -> void:
 	# changing the style of the font
 	tags_dialogue = "[color=#000000][font_size=10]"
 	tags_bottons = "[color=#C4D6B0][font_size=15]"
-	
 	if indexDialoguePath1 != 1:
 		botton22Interaction.visible = false
-		botton22Interaction.disabled = true
 		botton_2.visible = false
-	else:
+	if indexDialoguePath1 == 1:
 		actualText1 = textBottonArray[1]
 		botton22Interaction.visible = true
-		botton22Interaction.disabled = false
 		botton_2.visible = true
-	
-	# displaying the text as spesific line
+	if indexDialoguePath1 == 5:
+		botton22Interaction.visible = true
+		botton_2.visible = true
+	if indexDialoguePath2 == 14:
+		botton12Interaction.visible = true
+		botton_1.visible = true
 	
 	# combining the elements and the text together
 	dialogue.text = tags_dialogue + actual_dialogue
@@ -91,4 +107,3 @@ func _process(delta: float) -> void:
 	dialogue.size = Vector2(200, 300)
 	botton_1.size = Vector2(150, 35)
 	botton_2.size = Vector2(150, 35)
-	
