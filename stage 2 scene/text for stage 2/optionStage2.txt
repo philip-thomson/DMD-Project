@@ -1,3 +1,7 @@
 continue
-option 1 text
-option 2 text
+Focus on company
+Focus on nature
+Promise to fix
+Understanding
+Refusal
+Morality
