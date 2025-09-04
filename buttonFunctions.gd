@@ -10,6 +10,13 @@ var branch_2 = false
 func _on_pressed() -> void:
 	if path_2 != true:
 		if complete_end == false:
+			if testing.position == Vector2(630, 100) && testing.introFinished == true:
+				if testing.dialogueUnique == false:
+					testing.position = Vector2(400, 100)
+				else:
+					pass
+			else:
+				testing.position = Vector2(630, 100)
 			if end_point1 == false:
 				if testing.indexDialoguePath1 != testing.indexDialoguePath1End:
 					testing.indexDialoguePath1 += 1
@@ -51,6 +58,13 @@ func _on_pressed() -> void:
 func _on_buttontest_2_pressed() -> void:
 	if path_1 != true:
 		if complete_end == false:
+			if testing.position == Vector2(630, 100) && testing.introFinished == true:
+				if testing.dialogueUnique == false:
+					testing.position = Vector2(400, 100)
+				else:
+					pass
+			else:
+				testing.position = Vector2(630, 100)
 			if end_point1 == false:
 				if testing.indexDialoguePath2 != testing.indexDialoguePath2End:
 					testing.indexDialoguePath2 += 1

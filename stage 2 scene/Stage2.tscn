@@ -10,7 +10,7 @@ load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.cte
 script = ExtResource("1_sfdtj")
 
 [node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
-position = Vector2(633, 97)
+position = Vector2(630, 100)
 indexDialoguePath1End = 5
 indexDialoguePath2 = 11
 indexDialoguePath2End = 14

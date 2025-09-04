@@ -7,6 +7,8 @@ var tags_bottons: String = ""
 var actual_dialogue: String = ""
 var actualText1: String = ""
 var actualText2: String = ""
+@export var introFinished: bool
+@export var dialogueUnique: bool
 @export var indexDialoguePath1: int
 @export var indexDialoguePath1End: int
 @export var indexDialoguePath2: int
