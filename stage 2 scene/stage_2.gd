@@ -5,9 +5,6 @@ func _ready() -> void:
 	gui.position = Vector2(630, 100)
 	gui.dialogueUnique = false
 
-#TODO need to work on getting the gui.dialogueUnique = true or false working
-
-
 func _process(delta: float) -> void:
 	if gui.indexDialoguePath1 == 0:
 		gui.botton22Interaction.visible = false
@@ -17,11 +14,19 @@ func _process(delta: float) -> void:
 		gui.actualText1 = gui.textBottonArray[1]
 		gui.botton22Interaction.visible = true
 		gui.botton_2.visible = true
+	if gui.indexDialoguePath1 in range(3, 5):
+		gui.dialogueUnique = true
+	else:
+		gui.dialogueUnique = false
 	if gui.indexDialoguePath1 == 5:
 		gui.actualText1 = gui.textBottonArray[3]
 		gui.actualText2 = gui.textBottonArray[4]
 		gui.botton22Interaction.visible = true
 		gui.botton_2.visible = true
+	if gui.indexDialoguePath2 in range(13, 14):
+		gui.dialogueUnique = true
+	else:
+		gui.dialogueUnique = false
 	if gui.indexDialoguePath2 == 14:
 		gui.actualText1 = gui.textBottonArray[5]
 		gui.actualText2 = gui.textBottonArray[6]

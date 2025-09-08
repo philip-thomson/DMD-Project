@@ -43,6 +43,13 @@ func _on_pressed() -> void:
 	else:
 		if branch_2 != true:
 			if complete_end == false:
+				if testing.position == Vector2(630, 100) && testing.introFinished == true:
+					if testing.dialogueUnique == false:
+						testing.position = Vector2(400, 100)
+					else:
+						pass
+				else:
+					testing.position = Vector2(630, 100)
 				if testing.indexFiller1Path2 != testing.indexFiller1Path2End:
 					testing.indexFiller1Path2 += 1
 					testing.actual_dialogue = testing.TextDialogueArray[testing.indexFiller1Path2]
@@ -90,6 +97,13 @@ func _on_buttontest_2_pressed() -> void:
 					complete_end = true
 	else:
 		if complete_end == false:
+			if testing.position == Vector2(630, 100) && testing.introFinished == true:
+				if testing.dialogueUnique == false:
+					testing.position = Vector2(400, 100)
+				else:
+					pass
+			else:
+				testing.position = Vector2(630, 100)
 			if testing.indexFiller2Path1 != testing.indexFiller2Path1End:
 				testing.indexFiller2Path1 += 1
 				testing.actual_dialogue = testing.TextDialogueArray[testing.indexFiller2Path1]

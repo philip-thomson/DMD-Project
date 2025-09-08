@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="DMD Project"
-run/main_scene="uid://1ehqo7hamtls"
+run/main_scene="uid://tahfuslbb7oy"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
 [input]
