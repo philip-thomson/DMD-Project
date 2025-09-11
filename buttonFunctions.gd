@@ -40,6 +40,8 @@ func _on_pressed() -> void:
 					print("reached end point of this whole path")
 					print(testing.indexFiller1Path1)
 					complete_end = true
+		else:
+			get_tree().change_scene_to_file(testing.possiblePath1)
 	else:
 		if branch_2 != true:
 			if complete_end == false:
@@ -60,6 +62,8 @@ func _on_pressed() -> void:
 					print("reached end point of this whole path")
 					print(testing.indexFiller1Path1)
 					complete_end = true
+			else:
+				get_tree().change_scene_to_file(testing.possiblePath2)
 
 
 func _on_buttontest_2_pressed() -> void:
@@ -95,6 +99,8 @@ func _on_buttontest_2_pressed() -> void:
 					print("reached end point of this whole path")
 					print(testing.indexFiller2Path2)
 					complete_end = true
+		else:
+			get_tree().change_scene_to_file(testing.possiblePath2)
 	else:
 		if complete_end == false:
 			if testing.position == Vector2(630, 100) && testing.introFinished == true:
@@ -114,6 +120,8 @@ func _on_buttontest_2_pressed() -> void:
 				print("reached end point of this whole path")
 				print(testing.indexFiller2Path1)
 				complete_end = true
+		else:
+			get_tree().change_scene_to_file(testing.possiblePath1)
 
 
 
