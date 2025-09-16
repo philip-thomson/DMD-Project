@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c21pm3kp3nc4h"
+path="res://.godot/imported/human beeepebebebebeeep.mp3-a9ff184191d4f3b13e85fc55ff48b2be.mp3str"
+
+[deps]
+
+source_file="res://sound files/human beeepebebebebeeep.mp3"
+dest_files=["res://.godot/imported/human beeepebebebebeeep.mp3-a9ff184191d4f3b13e85fc55ff48b2be.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

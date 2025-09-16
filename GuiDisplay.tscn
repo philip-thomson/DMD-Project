@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://coyqxlw6c1065" path="res://Gui.gd" id="1_ah776"]
 [ext_resource type="StyleBox" uid="uid://65ovqdvjhjpq" path="res://ButtonColor.tres" id="2_ah776"]
 [ext_resource type="Script" uid="uid://p10fw43jamvo" path="res://buttonFunctions.gd" id="3_v0osr"]
-[ext_resource type="AudioStream" uid="uid://dmr78n2t7l2f1" path="res://sound files/button-test.wav" id="4_ah776"]
+[ext_resource type="AudioStream" uid="uid://d00xijfi76chv" path="res://sound files/button sound .wav" id="4_ah776"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rwr7p"]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://6u6a62b5gu5j"
+path="res://.godot/imported/Tui looping.mp3-390f151966a23a931f2f36363501d1a4.mp3str"
+
+[deps]
+
+source_file="res://sound files/Tui looping.mp3"
+dest_files=["res://.godot/imported/Tui looping.mp3-390f151966a23a931f2f36363501d1a4.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
