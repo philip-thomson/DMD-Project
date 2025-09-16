@@ -38,13 +38,10 @@ var actualText2: String = ""
 @onready var botton_2: RichTextLabel = $botton2
 @onready var botton12Interaction: Button = $Buttontest1
 @onready var botton22Interaction: Button = $Buttontest2
+@onready var bottonPressed: AudioStreamPlayer = $AudioStreamPlayer
 
 @export var dialoge_path: String
 @export var button_path: String
-
-
-#giving the audio files variables
-@onready var button_press = preload("res://sound files/button-test.wav")
 
 # the raw text within the file as it is displayed in the .txt
 var raw_dialogue_file: FileAccess

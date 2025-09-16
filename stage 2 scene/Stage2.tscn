@@ -12,8 +12,8 @@ script = ExtResource("1_sfdtj")
 
 [node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
 position = Vector2(630, 100)
-possiblePath1 = "/home/fip/dmd-project/stage 3 path 1/Stage3Path1.tscn"
-possiblePath2 = "/home/fip/dmd-project/stage 3 path 2/Stage3Path2.tscn"
+possiblePath1 = "res://stage 3 path 1/Stage3Path1.tscn"
+possiblePath2 = "res://stage 3 path 2/Stage3Path2.tscn"
 indexDialoguePath1End = 5
 indexDialoguePath2 = 11
 indexDialoguePath2End = 14
@@ -25,8 +25,8 @@ indexFiller1Path2 = 14
 indexFiller1Path2End = 17
 indexFiller2Path2 = 17
 indexFiller2Path2End = 22
-dialoge_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/stage2.txt"
-button_path = "/home/fip/dmd-project/stage 2 scene/text for stage 2/optionStage2.txt"
+dialoge_path = "res://stage 2 scene/text for stage 2/stage2.txt"
+button_path = "res://stage 2 scene/text for stage 2/optionStage2.txt"
 
 [node name="assistent" type="Sprite2D" parent="."]
 position = Vector2(900, 350)

@@ -8,6 +8,7 @@ var branch_1 = false
 var branch_2 = false
 
 func _on_pressed() -> void:
+	testing.bottonPressed.play()
 	if path_2 != true:
 		if complete_end == false:
 			if testing.position == Vector2(630, 100) && testing.introFinished == true:

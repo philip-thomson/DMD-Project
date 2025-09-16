@@ -1,8 +1,9 @@
-[gd_scene load_steps=26 format=3 uid="uid://bs4ao1prbv1xt"]
+[gd_scene load_steps=27 format=3 uid="uid://bs4ao1prbv1xt"]
 
 [ext_resource type="Script" uid="uid://coyqxlw6c1065" path="res://Gui.gd" id="1_ah776"]
 [ext_resource type="StyleBox" uid="uid://65ovqdvjhjpq" path="res://ButtonColor.tres" id="2_ah776"]
 [ext_resource type="Script" uid="uid://p10fw43jamvo" path="res://buttonFunctions.gd" id="3_v0osr"]
+[ext_resource type="AudioStream" uid="uid://dmr78n2t7l2f1" path="res://sound files/button-test.wav" id="4_ah776"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rwr7p"]
 
@@ -111,6 +112,9 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_3bfu1")
 theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6kv2s")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_45g5x")
 metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_ah776")
 
 [connection signal="mouse_entered" from="Buttontest1" to="Buttontest1" method="_on_mouse_entered"]
 [connection signal="pressed" from="Buttontest1" to="Buttontest1" method="_on_pressed"]
