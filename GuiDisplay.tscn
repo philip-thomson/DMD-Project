@@ -1,7 +1,8 @@
-[gd_scene load_steps=27 format=3 uid="uid://bs4ao1prbv1xt"]
+[gd_scene load_steps=28 format=3 uid="uid://bs4ao1prbv1xt"]
 
 [ext_resource type="Script" uid="uid://coyqxlw6c1065" path="res://Gui.gd" id="1_ah776"]
 [ext_resource type="StyleBox" uid="uid://65ovqdvjhjpq" path="res://ButtonColor.tres" id="2_ah776"]
+[ext_resource type="FontFile" uid="uid://bulhnu564b8an" path="res://OpenSans-SemiBold.ttf" id="2_m2d3e"]
 [ext_resource type="Script" uid="uid://p10fw43jamvo" path="res://buttonFunctions.gd" id="3_v0osr"]
 [ext_resource type="AudioStream" uid="uid://d00xijfi76chv" path="res://sound files/button sound .wav" id="4_ah776"]
 
@@ -53,34 +54,43 @@
 script = ExtResource("1_ah776")
 
 [node name="dialogue" type="RichTextLabel" parent="."]
+modulate = Color(0.768627, 0.839216, 0.690196, 1)
+self_modulate = Color(0.768627, 0.839216, 0.690196, 1)
 offset_right = 250.0
 offset_bottom = 150.0
+theme_override_fonts/normal_font = ExtResource("2_m2d3e")
+theme_override_font_sizes/normal_font_size = 10
+theme_override_styles/normal = ExtResource("2_ah776")
 bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
 [node name="botton1" type="RichTextLabel" parent="."]
-offset_left = -2.0
-offset_top = 161.0
-offset_right = 38.0
-offset_bottom = 201.0
+modulate = Color(0.768627, 0.839216, 0.690196, 1)
+self_modulate = Color(0.768627, 0.839216, 0.690196, 1)
+offset_top = 160.0
+offset_right = 40.0
+offset_bottom = 200.0
+theme_override_fonts/normal_font = ExtResource("2_m2d3e")
 theme_override_styles/normal = ExtResource("2_ah776")
 bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
 [node name="botton2" type="RichTextLabel" parent="."]
-offset_left = -1.0
+modulate = Color(0.768627, 0.839216, 0.690196, 1)
+self_modulate = Color(0.768627, 0.839216, 0.690196, 1)
 offset_top = 211.0
-offset_right = 39.0
+offset_right = 40.0
 offset_bottom = 251.0
+theme_override_fonts/normal_font = ExtResource("2_m2d3e")
 theme_override_styles/normal = ExtResource("2_ah776")
 bbcode_enabled = true
 metadata/_edit_use_anchors_ = true
 
 [node name="Buttontest1" type="Button" parent="."]
-offset_left = -3.0
-offset_top = 163.0
-offset_right = 147.0
-offset_bottom = 198.0
+offset_left = -1.0
+offset_top = 162.0
+offset_right = 149.0
+offset_bottom = 197.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_rwr7p")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_ah776")
 theme_override_styles/disabled = SubResource("StyleBoxEmpty_m2d3e")
@@ -96,9 +106,9 @@ script = ExtResource("3_v0osr")
 metadata/_edit_use_anchors_ = true
 
 [node name="Buttontest2" type="Button" parent="."]
-offset_left = -3.0
+offset_left = -2.0
 offset_top = 210.0
-offset_right = 147.0
+offset_right = 148.0
 offset_bottom = 245.0
 theme_override_styles/focus = SubResource("StyleBoxEmpty_cbqke")
 theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_56k8t")

@@ -1,7 +1,4 @@
 extends Node2D
-# tags that are used to changed the aspects of the font
-var tags_dialogue: String = ""
-var tags_bottons: String = ""
 
 # what the text is
 var actual_dialogue: String = ""
@@ -85,16 +82,11 @@ func _ready() -> void:
 
 # function that works on every frame that is being shown
 func _process(delta: float) -> void:
-	# changing the style of the font
-	tags_dialogue = "[color=#000000][font_size=10]"
-	tags_bottons = "[color=#C4D6B0][font_size=15]"
-	
 	# combining the elements and the text together
-	dialogue.text = tags_dialogue + actual_dialogue
-	botton_1.text = tags_bottons + actualText1
-	botton_2.text = tags_bottons + actualText2
-	
+	dialogue.text = actual_dialogue
+	botton_1.text = actualText1
+	botton_2.text = actualText2
 	# setting its size
-	dialogue.size = Vector2(200, 300)
+	dialogue.size = Vector2(200, 150)
 	botton_1.size = Vector2(150, 35)
 	botton_2.size = Vector2(150, 35)
