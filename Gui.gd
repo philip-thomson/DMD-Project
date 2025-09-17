@@ -35,7 +35,8 @@ var actualText2: String = ""
 @onready var botton_2: RichTextLabel = $botton2
 @onready var botton12Interaction: Button = $Buttontest1
 @onready var botton22Interaction: Button = $Buttontest2
-@onready var bottonPressed: AudioStreamPlayer = $AudioStreamPlayer
+@onready var bottonPressed: AudioStreamPlayer = $buttonSound
+@onready var userTalking: AudioStreamPlayer = $playerSound
 
 @export var dialoge_path: String
 @export var button_path: String

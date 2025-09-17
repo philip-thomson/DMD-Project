@@ -1,10 +1,11 @@
-[gd_scene load_steps=28 format=3 uid="uid://bs4ao1prbv1xt"]
+[gd_scene load_steps=29 format=3 uid="uid://bs4ao1prbv1xt"]
 
 [ext_resource type="Script" uid="uid://coyqxlw6c1065" path="res://Gui.gd" id="1_ah776"]
 [ext_resource type="StyleBox" uid="uid://65ovqdvjhjpq" path="res://ButtonColor.tres" id="2_ah776"]
 [ext_resource type="FontFile" uid="uid://bulhnu564b8an" path="res://OpenSans-SemiBold.ttf" id="2_m2d3e"]
 [ext_resource type="Script" uid="uid://p10fw43jamvo" path="res://buttonFunctions.gd" id="3_v0osr"]
 [ext_resource type="AudioStream" uid="uid://d00xijfi76chv" path="res://sound files/button sound .wav" id="4_ah776"]
+[ext_resource type="AudioStream" uid="uid://ce7x1ye6i8dba" path="res://sound files/human dudduudoh.mp3" id="6_v0osr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rwr7p"]
 
@@ -123,8 +124,11 @@ theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_6kv2s")
 theme_override_styles/normal = SubResource("StyleBoxEmpty_45g5x")
 metadata/_edit_use_anchors_ = true
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="buttonSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_ah776")
+
+[node name="playerSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_v0osr")
 
 [connection signal="mouse_entered" from="Buttontest1" to="Buttontest1" method="_on_mouse_entered"]
 [connection signal="pressed" from="Buttontest1" to="Buttontest1" method="_on_pressed"]

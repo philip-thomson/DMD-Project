@@ -14,6 +14,7 @@ func _on_pressed() -> void:
 			if testing.position == Vector2(630, 100) && testing.introFinished == true:
 				if testing.dialogueUnique == false:
 					testing.position = Vector2(400, 100)
+					testing.userTalking.play()
 				else:
 					pass
 			else:
@@ -68,11 +69,13 @@ func _on_pressed() -> void:
 
 
 func _on_buttontest_2_pressed() -> void:
+	testing.bottonPressed.play()
 	if path_1 != true:
 		if complete_end == false:
 			if testing.position == Vector2(630, 100) && testing.introFinished == true:
 				if testing.dialogueUnique == false:
 					testing.position = Vector2(400, 100)
+					testing.userTalking.play()
 				else:
 					pass
 			else:
