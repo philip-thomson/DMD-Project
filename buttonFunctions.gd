@@ -37,6 +37,7 @@ func _on_pressed() -> void:
 						testing.actual_dialogue = testing.TextDialogueArray[testing.indexFiller1Path1]
 						testing.botton_2.hide()
 						testing.botton22Interaction.visible = false
+						print(testing.botton22Interaction.visible)
 						print(testing.indexFiller1Path1)
 				else:
 					print("reached end point of this whole path")

@@ -77,8 +77,8 @@ texture = SubResource("CompressedTexture2D_tqnae")
 position = Vector2(294, 413)
 scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_phq5r")
-animation = &"apology"
-frame_progress = 0.521889
+animation = &"idle"
+frame_progress = 0.548525
 
 [node name="bird" type="Sprite2D" parent="."]
 position = Vector2(853, 415)
