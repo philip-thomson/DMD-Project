@@ -1,0 +1,66 @@
+[gd_scene load_steps=9 format=3 uid="uid://b5ki33h06wobo"]
+
+[ext_resource type="Script" uid="uid://cvyk4rq78bm3p" path="res://characters.gd" id="1_6knve"]
+[ext_resource type="Texture2D" uid="uid://b4xw5nev2hgid" path="res://CEO.PNG" id="1_wn83q"]
+[ext_resource type="Texture2D" uid="uid://c3soumsldsg4" path="res://icon.svg" id="2_6knve"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rhnhp"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eyd1h"]
+atlas = ExtResource("1_wn83q")
+region = Rect2(0, 0, 2064, 2752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0kcgr"]
+atlas = ExtResource("1_wn83q")
+region = Rect2(2064, 0, 2064, 2752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_klk2c"]
+atlas = ExtResource("1_wn83q")
+region = Rect2(4128, 0, 2064, 2752)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ewidt"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eyd1h")
+}],
+"loop": true,
+"name": &"apology",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0kcgr")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_klk2c")
+}],
+"loop": true,
+"name": &"strong",
+"speed": 5.0
+}]
+
+[node name="characterLocation" type="Node2D"]
+script = ExtResource("1_6knve")
+
+[node name="assistent" type="Sprite2D" parent="."]
+position = Vector2(900, 350)
+scale = Vector2(1, 2)
+texture = SubResource("CompressedTexture2D_rhnhp")
+
+[node name="player" type="AnimatedSprite2D" parent="."]
+position = Vector2(329, 413)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_ewidt")
+animation = &"idle"
+
+[node name="bird" type="Sprite2D" parent="."]
+position = Vector2(853, 415)
+scale = Vector2(1, 2)
+texture = ExtResource("2_6knve")

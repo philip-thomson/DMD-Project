@@ -1,5 +1,9 @@
 extends Button
 @onready var testing: Node2D = $".."
+
+#TODO start setting up the character changing stances
+@onready var characterStance: Node2D = $characters
+
 var end_point1 = false
 var complete_end  = false
 var path_1 = false
@@ -21,6 +25,7 @@ func _on_pressed() -> void:
 				testing.position = Vector2(630, 100)
 			if end_point1 == false:
 				if testing.indexDialoguePath1 != testing.indexDialoguePath1End:
+					
 					testing.indexDialoguePath1 += 1
 					testing.actual_dialogue = testing.TextDialogueArray[testing.indexDialoguePath1]
 					testing.botton_2.hide()

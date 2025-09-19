@@ -2,7 +2,6 @@ extends Node2D
 
 @onready var gui: Node2D = $Gui
 
-
 func _ready() -> void:
 	gui.position = Vector2(630, 100)
 	gui.dialogueUnique = false

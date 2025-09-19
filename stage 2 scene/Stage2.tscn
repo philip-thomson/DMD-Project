@@ -1,60 +1,20 @@
-[gd_scene load_steps=10 format=3 uid="uid://1ehqo7hamtls"]
+[gd_scene load_steps=4 format=3 uid="uid://1ehqo7hamtls"]
 
 [ext_resource type="Script" uid="uid://cly2vh22egteo" path="res://stage 2 scene/stage_2.gd" id="1_sfdtj"]
 [ext_resource type="PackedScene" uid="uid://bs4ao1prbv1xt" path="res://GuiDisplay.tscn" id="2_sfdtj"]
-[ext_resource type="Texture2D" uid="uid://b4xw5nev2hgid" path="res://CEO.PNG" id="3_mm1r7"]
-[ext_resource type="Texture2D" uid="uid://c3soumsldsg4" path="res://icon.svg" id="3_tqnae"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tqnae"]
-load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_eyd1h"]
-atlas = ExtResource("3_mm1r7")
-region = Rect2(0, 0, 2064, 2752)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0kcgr"]
-atlas = ExtResource("3_mm1r7")
-region = Rect2(2064, 0, 2064, 2752)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_klk2c"]
-atlas = ExtResource("3_mm1r7")
-region = Rect2(4128, 0, 2064, 2752)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_phq5r"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_eyd1h")
-}],
-"loop": true,
-"name": &"apology",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0kcgr")
-}],
-"loop": true,
-"name": &"idle",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_klk2c")
-}],
-"loop": true,
-"name": &"strong",
-"speed": 5.0
-}]
+[ext_resource type="PackedScene" uid="uid://b5ki33h06wobo" path="res://characters.tscn" id="2_tqnae"]
 
 [node name="Stage2" type="Node2D"]
 script = ExtResource("1_sfdtj")
+
+[node name="characterLocation" parent="." instance=ExtResource("2_tqnae")]
 
 [node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
 position = Vector2(630, 100)
 possiblePath1 = "res://stage 3 path 1/Stage3Path1.tscn"
 possiblePath2 = "res://stage 3 path 2/Stage3Path2.tscn"
 indexDialoguePath1End = 5
+moodCeo1 = "apology"
 indexDialoguePath2 = 11
 indexDialoguePath2End = 14
 indexFiller1Path1 = 5
@@ -67,20 +27,3 @@ indexFiller2Path2 = 17
 indexFiller2Path2End = 22
 dialoge_path = "res://stage 2 scene/text for stage 2/stage2.txt"
 button_path = "res://stage 2 scene/text for stage 2/optionStage2.txt"
-
-[node name="assistent" type="Sprite2D" parent="."]
-position = Vector2(900, 350)
-scale = Vector2(1, 2)
-texture = SubResource("CompressedTexture2D_tqnae")
-
-[node name="player" type="AnimatedSprite2D" parent="."]
-position = Vector2(294, 413)
-scale = Vector2(0.15, 0.15)
-sprite_frames = SubResource("SpriteFrames_phq5r")
-animation = &"idle"
-frame_progress = 0.548525
-
-[node name="bird" type="Sprite2D" parent="."]
-position = Vector2(853, 415)
-scale = Vector2(1, 2)
-texture = ExtResource("3_tqnae")

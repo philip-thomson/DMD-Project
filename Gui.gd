@@ -5,29 +5,56 @@ var actual_dialogue: String = ""
 var actualText1: String = ""
 var actualText2: String = ""
 
-
+# dialogue specifications
 @export var introFinished: bool
 @export var dialogueUnique: bool
+
+# the routes for that scene
 @export var possiblePath1: String
 @export var possiblePath2: String
 
 
+# the stuff for the first path
 @export var indexDialoguePath1: int
 @export var indexDialoguePath1End: int
+@export var moodCeo1: String
+@export var moodAssistent1: String
+@export var moodBird1: String
+
+# the stuff for the second path
 @export var indexDialoguePath2: int
 @export var indexDialoguePath2End: int
+@export var moodCeo2: String
+@export var moodAssistent2: String
+@export var moodBird2: String
 
+# the stuff for the dialogue filler path one for the first path
 @export var indexFiller1Path1: int
 @export var indexFiller1Path1End: int
+@export var moodCeo1Filler1: String
+@export var moodAssistent1Filler1: String
+@export var moodBird1Filler1: String
 
+# the stuff for the dialogue filler path two for the first path
 @export var indexFiller2Path1: int
 @export var indexFiller2Path1End: int
+@export var moodCeo1Filler2: String
+@export var moodAssistent1Filler2: String
+@export var moodBird1Filler2: String
 
+# the stuff for the dialogue filler path one for the second path
 @export var indexFiller1Path2: int
 @export var indexFiller1Path2End: int
+@export var moodCeo2Filler1: String
+@export var moodAssistent2Filler1: String
+@export var moodBird2Filler1: String
+
+# the stuff for the dialogue filler path two for the second path
 @export var indexFiller2Path2: int
 @export var indexFiller2Path2End: int
-
+@export var moodCeo2Filler2: String
+@export var moodAssistent2Filler2: String
+@export var moodBird2Filler2: String
 
 # giving the RichTextlabel a meaning so its easier to read and useforce merge git not working
 @onready var dialogue: RichTextLabel = $dialogue
