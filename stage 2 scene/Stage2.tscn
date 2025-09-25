@@ -7,14 +7,13 @@
 [node name="Stage2" type="Node2D"]
 script = ExtResource("1_sfdtj")
 
-[node name="characterLocation" parent="." instance=ExtResource("2_tqnae")]
-
 [node name="Gui" parent="." instance=ExtResource("2_sfdtj")]
 position = Vector2(630, 100)
 possiblePath1 = "res://stage 3 path 1/Stage3Path1.tscn"
 possiblePath2 = "res://stage 3 path 2/Stage3Path2.tscn"
 indexDialoguePath1End = 5
 moodCeo1 = "apology"
+moodAssistent1 = "smug"
 indexDialoguePath2 = 11
 indexDialoguePath2End = 14
 indexFiller1Path1 = 5
@@ -27,3 +26,5 @@ indexFiller2Path2 = 17
 indexFiller2Path2End = 22
 dialoge_path = "res://stage 2 scene/text for stage 2/stage2.txt"
 button_path = "res://stage 2 scene/text for stage 2/optionStage2.txt"
+
+[node name="characterLocation" parent="." instance=ExtResource("2_tqnae")]

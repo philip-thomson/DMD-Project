@@ -1,11 +1,60 @@
-[gd_scene load_steps=9 format=3 uid="uid://b5ki33h06wobo"]
+[gd_scene load_steps=20 format=3 uid="uid://b5ki33h06wobo"]
 
 [ext_resource type="Script" uid="uid://cvyk4rq78bm3p" path="res://characters.gd" id="1_6knve"]
-[ext_resource type="Texture2D" uid="uid://b4xw5nev2hgid" path="res://CEO.PNG" id="1_wn83q"]
-[ext_resource type="Texture2D" uid="uid://c3soumsldsg4" path="res://icon.svg" id="2_6knve"]
+[ext_resource type="Texture2D" uid="uid://b4xw5nev2hgid" path="res://character art/CEO.PNG" id="1_wn83q"]
+[ext_resource type="Texture2D" uid="uid://dmr2bbdshxj5l" path="res://character art/Male Assistant.PNG" id="2_6knve"]
+[ext_resource type="Texture2D" uid="uid://dsvccblhlda22" path="res://character art/IMG_0924.PNG" id="4_rhnhp"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rhnhp"]
-load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+[sub_resource type="AtlasTexture" id="AtlasTexture_6ppl8"]
+atlas = ExtResource("2_6knve")
+region = Rect2(4644, 0, 1548, 2752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a26i5"]
+atlas = ExtResource("2_6knve")
+region = Rect2(1548, 0, 1548, 2752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_phq5r"]
+atlas = ExtResource("2_6knve")
+region = Rect2(0, 0, 1548, 2752)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jwvx7"]
+atlas = ExtResource("2_6knve")
+region = Rect2(3096, 0, 1548, 2752)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rhnhp"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6ppl8")
+}],
+"loop": true,
+"name": &"anger",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a26i5")
+}],
+"loop": true,
+"name": &"concerned",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_phq5r")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jwvx7")
+}],
+"loop": true,
+"name": &"smug",
+"speed": 5.0
+}]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_eyd1h"]
 atlas = ExtResource("1_wn83q")
@@ -46,13 +95,77 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_ewidt"]
+atlas = ExtResource("4_rhnhp")
+region = Rect2(8192, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ifjty"]
+atlas = ExtResource("4_rhnhp")
+region = Rect2(2048, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gwi7s"]
+atlas = ExtResource("4_rhnhp")
+region = Rect2(0, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vcy1y"]
+atlas = ExtResource("4_rhnhp")
+region = Rect2(6144, 0, 2048, 2048)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e618v"]
+atlas = ExtResource("4_rhnhp")
+region = Rect2(4096, 0, 2048, 2048)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ifjty"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ewidt")
+}],
+"loop": true,
+"name": &"angry",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ifjty")
+}],
+"loop": true,
+"name": &"happy",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gwi7s")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vcy1y")
+}],
+"loop": true,
+"name": &"sad",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e618v")
+}],
+"loop": true,
+"name": &"sickly",
+"speed": 5.0
+}]
+
 [node name="characterLocation" type="Node2D"]
 script = ExtResource("1_6knve")
 
-[node name="assistent" type="Sprite2D" parent="."]
-position = Vector2(900, 350)
-scale = Vector2(1, 2)
-texture = SubResource("CompressedTexture2D_rhnhp")
+[node name="assistent" type="AnimatedSprite2D" parent="."]
+position = Vector2(900, 397)
+scale = Vector2(0.15, 0.15)
+sprite_frames = SubResource("SpriteFrames_rhnhp")
+animation = &"smug"
 
 [node name="player" type="AnimatedSprite2D" parent="."]
 position = Vector2(329, 413)
@@ -60,7 +173,8 @@ scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_ewidt")
 animation = &"idle"
 
-[node name="bird" type="Sprite2D" parent="."]
+[node name="bird" type="AnimatedSprite2D" parent="."]
 position = Vector2(853, 415)
 scale = Vector2(1, 2)
-texture = ExtResource("2_6knve")
+sprite_frames = SubResource("SpriteFrames_ifjty")
+animation = &"idle"

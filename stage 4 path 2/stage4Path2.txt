@@ -1,5 +1,0 @@
-this intro text
-dialogue for option 1
-dialogue for option 2
-dialogue for option 3
-dialogue for option 4

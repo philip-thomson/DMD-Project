@@ -1,3 +1,17 @@
-[gd_scene format=3 uid="uid://dbf8uucigad2m"]
+[gd_scene load_steps=4 format=3 uid="uid://dbf8uucigad2m"]
+
+[ext_resource type="PackedScene" uid="uid://bs4ao1prbv1xt" path="res://GuiDisplay.tscn" id="1_dnms2"]
+[ext_resource type="Script" uid="uid://c2twaqx81jvcs" path="res://stage 3 path 2/stage_3_path_2.gd" id="1_gt5ce"]
+[ext_resource type="PackedScene" uid="uid://b5ki33h06wobo" path="res://characters.tscn" id="2_gt5ce"]
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_gt5ce")
+
+[node name="Gui" parent="." instance=ExtResource("1_dnms2")]
+indexDialoguePath1End = 7
+indexDialoguePath2 = 8
+indexDialoguePath2End = 14
+dialoge_path = "res://stage 3 path 2/text for stage 3 path 2/stage3Path2.txt"
+button_path = "res://stage 3 path 2/text for stage 3 path 2/optionStage3.2.txt"
+
+[node name="characterLocation" parent="." instance=ExtResource("2_gt5ce")]

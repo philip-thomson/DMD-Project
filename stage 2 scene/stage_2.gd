@@ -1,6 +1,9 @@
 extends Node2D
 
 @onready var gui: Node2D = $Gui
+@onready var characterStances: Node2D = $characterLocation
+
+#TODO adding the character changing stance
 
 func _ready() -> void:
 	gui.position = Vector2(630, 100)
