@@ -1,5 +1,14 @@
-this intro text
-dialogue for option 1
-dialogue for option 2
-dialogue for option 3
-dialogue for option 4
+Good evening boss. The natural areas that we exploited have been restored. However, as expected, we are once again on track to bankruptcy.
+We can help!
+Glad to see that you’re doing well. How exactly are you supposed to help us?
+We’ve been stockpiling resources! We knew that after you helped us you would be in a bad spot. again. So we wanted to help you so our home wouldn’t be torn down. again.
+Allow me to see what you’ve saved up.
+Impressive! This is more than enough to bring us out of this situation. Where did you manage to get these from?
+Many of the resources we saw that you were taking from our home were things that were completely renewable! So as you worked to restore our home, we slowly stored more and more!
+Hm. I must say I misjudged your usefulness. I was not aware that these resources were renewable. I rarely say this, but thank you.
+Of course! We were just interested in our home not being torn down!
+I’ll go and notify the rest of the company to move these resources to our stock.
+We can bring them in! Just tell us where to go.
+Your assistance is appreciated.
+So I managed to successfully keep my company stable, and kept the nature around us intact. I wonder what would’ve happened if I'd chosen a different path.
+End 2/4: Restoration

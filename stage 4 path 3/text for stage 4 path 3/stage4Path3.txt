@@ -1,5 +1,16 @@
-this intro text
-dialogue for option 1
-dialogue for option 2
-dialogue for option 3
-dialogue for option 4
+Good evening boss. Because of the resources we spent on finding another solution, we have had to exhaust most of the nearby natural resources to get back to stability. However, we are no longer in any danger of bankruptcy.
+How bad are the consequences of claiming these resources?
+I wouldn’t concern yourself with them, but if you insist.
+The local climate has worsened due to our exploitation of mother nature; air pollution and weather pattern shifts have raised concerns from local news outlets who are discussing the adverse effects that our deforestation has had, which in turn has resulted in increasing concerns that climate change will destroy living conditions on this planet.
+Due to the intense deforestation, native birds, insects and some mammals have had to relocate. Our decisions of tearing down their homes have also been causing problems with infestation rates and local decline in species populations.
+Despite this, the effects have not been considered drastic enough for local governments to take action against us, so we are free to continue the company as we please.
+What’s the chance of us needing to do something like this again?
+If we’re careful, None. The resources we’ve gained have been enough to keep us stable for the foreseeable future, and even once the resources run out, the profits we will gain from this stability should be plenty to keep the company stable. We just need to not make another mistake that puts us back into a bad position because there aren’t any more resources to harvest that will make us stable.
+Is it possible for us to restore the local ecosystem?
+No. The soil has been made unable to sustain life and without plants there won’t be any possibility for animals. Besides, I believe that several other companies are looking to build over where the local ecosystem was now that we’ve done the job of clearing it away.
+So there’s nothing we can do?
+Not unless you want to place us straight back into the threat of bankruptcy with no resources to get us out of it.
+I see. Thank you for the report.
+Of course. Thank you for making the right decision.
+So I managed to make my company stable, but I had to destroy the ecosystem to do it. Was there a way I could've saved both?
+End 3/4: Survival

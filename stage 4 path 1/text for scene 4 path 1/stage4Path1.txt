@@ -1,5 +1,13 @@
-this intro text
-dialogue for option 1
-dialogue for option 2
-dialogue for option 3
-dialogue for option 4
+Good evening boss. Your efforts have managed to keep the company stable, and our profits are at an all time high! However, we have completely exhausted all of the natural resources that we have access to. This has led to several complications.
+What exactly has occurred due to my decisions?
+The local climate has worsened drastically due to our exploitation of mother nature; air pollution and weather pattern shifts have raised many concerns from locals and news outlets worldwide who are discussing the adverse effects that our deforestation has had, which in turn has resulted in increasing concerns that climate change will destroy living conditions on this planet.
+Due to the intense deforestation, native birds, insects and some mammals have had to relocate. Our decisions of tearing down their homes have also been causing problems with infestation rates and global decline in species populations.
+Worst of all, our actions have drawn the attention of the public. This has resulted in many public protests and which has caused them to rally a court case against us.
+What are our odds?
+Unlikely. The government has become increasingly concerned about the state of the environment, so the odds are stacked against us. I’ll do the best I can to find people who can make a believable case for us, after all we do have the money for it, but I don’t think that will be enough. If we fail, our company will be completely shut down within the month.
+Do all that you can to make sure we succeed
+I will. But I doubt that will be enough.
+Good evening boss. Unfortunately we have lost the court case and the company has been scheduled for termination within the month.
+I’ll let all of our employees know and grant them their severance packages, and after that, I’ll be gone too. It was an honour serving you, boss.
+So I destroyed my company, and all of the nature around me. What could I have done differently?
+End 1/4: Collapse

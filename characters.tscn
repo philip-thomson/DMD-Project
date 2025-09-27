@@ -175,6 +175,6 @@ animation = &"idle"
 
 [node name="bird" type="AnimatedSprite2D" parent="."]
 position = Vector2(853, 415)
-scale = Vector2(1, 2)
+scale = Vector2(0.09, 0.09)
 sprite_frames = SubResource("SpriteFrames_ifjty")
 animation = &"idle"

@@ -1,5 +1,24 @@
-this intro text
-dialogue for option 1
-dialogue for option 2
-dialogue for option 3
-dialogue for option 4
+Good evening boss.
+Was it successful? Have we found another solution?
+No… we didn’t.
+Our feathered friends were more helpful than I had anticipated, but we couldn’t find anything.
+Really? Nothing at all?
+Nothing. If you have to tear down our home, we’ll allow you to. We don’t see that you have any other choice.
+Luckily for you but incredibly unluckily for us, we don’t have the option anymore.
+What? Why?
+We’ve gone bankrupt. We don’t have the resources to begin the exploitation of nature anymore. I warned you of this scenario, but I truly hoped that the help of the animals would be enough.
+Really? So will our home be kept safe?
+Yes. It will. I suppose you got what you wanted, boss. The local ecosystems are flourishing more than ever before.
+Well, we could offer you a home with us. We have plenty of food and shelter for you.
+Oh, no. I could never. I still have a home to go back to thankfully. I can’t speak for the boss however.
+What about you?
+Thank you for the offer, but I must pass. I don’t think I could spend my life in the wilderness.
+Where will you go then?
+I have plenty of savings that I can live off of for a time. While doing that I'll look for a new job I suppose.
+Fair enough. The offer will stay open if you ever want to take it.
+You know what, I'll take it.
+Really? You love nature even more than I already thought.
+We’ll make sure that you love it there! There’ll be a spot just for you.
+The rest of the company has already been informed to seek alternative employment. So there’s nothing left for me to do. It was an honour serving you, boss.
+I helped nature flourish, but I sacrificed my own company to do it. Is there really no way that I could've kept the company alive without exploiting the ecosystem?
+End 4/4: Bankruptcy
