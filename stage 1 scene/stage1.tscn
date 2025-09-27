@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://tahfuslbb7oy"]
+[gd_scene load_steps=4 format=3 uid="uid://tahfuslbb7oy"]
 
 [ext_resource type="Script" uid="uid://pxk1nboo13yi" path="res://stage 1 scene/stage_1.gd" id="1_2i2go"]
 [ext_resource type="PackedScene" uid="uid://bs4ao1prbv1xt" path="res://GuiDisplay.tscn" id="1_d266x"]
+[ext_resource type="Texture2D" uid="uid://rejg152c3huk" path="res://Backgrounds /IMG_0960.PNG" id="2_s0x32"]
 
 [node name="stage1" type="Node2D"]
 script = ExtResource("1_2i2go")
 
+[node name="Img0960" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+texture = ExtResource("2_s0x32")
+
 [node name="Gui" parent="." instance=ExtResource("1_d266x")]
-possiblePath1 = "res://stage 1.5 scene/tutorial_stage.tscn"
+possiblePath1 = "res://stage 2 scene/Stage2.tscn"
 dialoge_path = "res://stage 1 scene/stage1.txt"
 button_path = "res://stage 1 scene/Stage1Option.txt"

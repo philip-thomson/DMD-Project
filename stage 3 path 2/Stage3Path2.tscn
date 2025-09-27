@@ -8,9 +8,17 @@
 script = ExtResource("1_gt5ce")
 
 [node name="Gui" parent="." instance=ExtResource("1_dnms2")]
+possiblePath1 = "res://stage 4 path 3/Stage4Path3.tscn"
+possiblePath2 = "res://stage 4 path 4/Stage4Path4.tscn"
 indexDialoguePath1End = 7
+moodCeo1 = "strong"
+moodAssistent1 = "smug"
+moodBird1 = "sad"
 indexDialoguePath2 = 8
 indexDialoguePath2End = 14
+moodCeo2 = "idle"
+moodAssistent2 = "anger"
+moodBird2 = "happy"
 dialoge_path = "res://stage 3 path 2/text for stage 3 path 2/stage3Path2.txt"
 button_path = "res://stage 3 path 2/text for stage 3 path 2/optionStage3.2.txt"
 
