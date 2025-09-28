@@ -165,7 +165,7 @@ script = ExtResource("1_6knve")
 position = Vector2(900, 397)
 scale = Vector2(0.15, 0.15)
 sprite_frames = SubResource("SpriteFrames_rhnhp")
-animation = &"smug"
+animation = &"concerned"
 
 [node name="player" type="AnimatedSprite2D" parent="."]
 position = Vector2(329, 413)
